@@ -40,7 +40,7 @@
    	pstmt.setString(9, hobby);
    	
    	int result = pstmt.executeUpdate();
-   	
+   	//회원가입 성공적으로 되었을 경우와 실패했을 경우
    	if(result >0){
    		con.commit();
    		msg = "성공적으로 회원가입이 완료되었습니다.";
